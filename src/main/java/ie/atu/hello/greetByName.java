@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public class greetByName {
 
     @GetMapping("/greet/{name}")
-    public String getName(@PathVariable Long name){
+    public String getName(@PathVariable String name){
         return "Hello " + name;
     }
 }
