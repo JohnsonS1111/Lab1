@@ -18,7 +18,7 @@ public class HelloController {
         return "Hello " + name;
     }
 
-    @GetMapping("/details/{")
+    @GetMapping("/details")
     public String details(@RequestParam String name, @RequestParam int age){
         return "Name: " + name + "\n: Age: " + age;
     }
