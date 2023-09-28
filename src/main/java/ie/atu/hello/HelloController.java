@@ -20,6 +20,6 @@ public class HelloController {
 
     @GetMapping("/details")
     public String details(@RequestParam String name, @RequestParam int age){
-        return "Name: " + name + "\n Age: " + age;
+        return "Hi my name is " + name + " and I am " + age + " years old.";
     }
 }
